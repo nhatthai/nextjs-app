@@ -4,10 +4,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+
+  // deploying a Next.js Hybrid application with more than 100Mb app size, use the standalone
+  output:"standalone"
 }
 
-//module.exports = nextConfig
-// deploying a Next.js Hybrid application with more than 100Mb app size, use the standalone
-module.exports = {
-  output:"standalone",
-}
+module.exports = nextConfig
